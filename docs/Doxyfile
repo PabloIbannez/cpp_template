@@ -1,0 +1,20 @@
+# Project settings
+PROJECT_NAME           = "PROJECT_NAME_PLACEHOLDER"
+PROJECT_NUMBER         = 0.1.0
+OUTPUT_DIRECTORY       = _build_doxygen
+
+# Input settings
+# We look at headers and source files
+INPUT                  = ../include ../src
+RECURSIVE              = YES
+FULL_PATH_NAMES        = YES
+STRIP_FROM_PATH        = ..
+
+# Output settings
+# HTML is disabled here because Sphinx will generate the HTML
+GENERATE_HTML          = NO
+GENERATE_LATEX         = NO
+GENERATE_XML           = YES
+
+# XML is required for Breathe/Sphinx
+XML_OUTPUT             = xml

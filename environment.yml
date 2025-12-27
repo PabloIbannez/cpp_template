@@ -7,6 +7,12 @@ dependencies:
   - cmake
   - make
   - gdb
+
+  # Documentation Tools
+  - doxygen          # Extracts API comments from C++
+  - sphinx           # Builds the documentation website
+  - breathe          # Bridge between Doxygen and Sphinx
+  - sphinx_rtd_theme # The standard "ReadTheDocs" theme
   
   # Dependencies
   - spdlog   # Logging
