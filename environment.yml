@@ -9,5 +9,5 @@ dependencies:
   - gdb
   
   # Dependencies
-  - spdlog        # Logging
-  - googletest    # Testing
+  - spdlog   # Logging
+  - gtest    # Testing
