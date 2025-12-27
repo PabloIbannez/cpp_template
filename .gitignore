@@ -1,0 +1,28 @@
+# Prerequisites
+*.d
+*.o
+*.obj
+*.exe
+*.lib
+*.a
+*.so
+*.dll
+*.dylib
+
+# Build directories
+build/
+bin/
+lib/
+out/
+
+# IDE settings
+.vscode/
+.idea/
+*.sln
+*.vcxproj
+*.vcxproj.user
+.DS_Store
+
+# Python/Conda artifacts
+__pycache__/
+*.pyc

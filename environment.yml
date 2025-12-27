@@ -1,0 +1,13 @@
+name: PROJECT_NAME_PLACEHOLDER_env
+channels:
+  - conda-forge
+dependencies:
+  # Build Tools
+  - cxx-compiler
+  - cmake
+  - make
+  - gdb
+  
+  # Dependencies
+  - spdlog        # Logging
+  - googletest    # Testing
