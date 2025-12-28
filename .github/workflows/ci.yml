@@ -27,7 +27,7 @@ jobs:
           activate-environment: test_env
           environment-file: environment.yml
           auto-activate-base: false
-          miniforge-variant: Mambaforge
+          miniforge-variant: Miniforge3
           use-mamba: true
 
       # 2. Configure CMake
