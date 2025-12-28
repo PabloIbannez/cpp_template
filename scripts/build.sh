@@ -9,7 +9,7 @@ cd build
 # -DCMAKE_EXPORT_COMPILE_COMMANDS=ON generates compile_commands.json for IDEs
 cmake .. -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 
-# Build the project using all available cores
-cmake --build . -- -j$(nproc)
+# Build the project using all available cores but one
+cmake --build . -- -j$(nproc --all | awk '{print $1-1}')
 
 echo "Build complete."
