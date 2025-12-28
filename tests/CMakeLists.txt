@@ -1,4 +1,3 @@
-# Find GoogleTest (installed via Conda)
 find_package(GTest REQUIRED)
 
 # Create the test executable
