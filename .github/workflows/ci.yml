@@ -30,28 +30,22 @@ jobs:
           miniforge-variant: Miniforge3
           use-mamba: true
 
-      # 2. Configure CMake
-      - name: Configure CMake
+      # 2. Configure CMake and build the project
+      - name: Configure and Build
         run: |
-          mkdir -p build
-          cmake -B build -DCMAKE_BUILD_TYPE=Release
+          ./scripts/build.sh
 
-      # 3. Build the Project
-      - name: Build
-        run: cmake --build build -- -j$(nproc)
-
-      # 4. Run Tests
+      # 3. Run Tests
       - name: Run Tests
         run: |
-          cd build
-          ctest --output-on-failure
+          ./scripts/run_tests.sh
 
-      # 5. Build Documentation
+      # 4. Build Documentation
       - name: Build Documentation
         run: |
           ./scripts/build_docs.sh
 
-      # 6. Upload Documentation as an Artifact
+      # 5. Upload Documentation as an Artifact
       - name: Upload Docs Artifact
         uses: actions/upload-artifact@v4
         with:
